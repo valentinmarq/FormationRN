@@ -29,8 +29,9 @@ import {
 
 const Section: React.FC<{
   title: string;
-}> = ({children, title}) => {
-  const isDarkMode = useColorScheme() === 'dark';
+}> = props => {
+  const {children, title} = props;
+  const isDarkMode: boolean = useColorScheme() === 'dark';
   return (
     <View style={styles.sectionContainer}>
       <Text
