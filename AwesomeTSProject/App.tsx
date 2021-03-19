@@ -1,8 +1,12 @@
 import React from 'react';
-import {SafeAreaView} from 'react-native';
+import {SafeAreaView, TextInput} from 'react-native';
 
 const App = () => {
-  return <SafeAreaView />;
+  return (
+    <SafeAreaView>
+      <TextInput placeholder="Titre de la chanson" />
+    </SafeAreaView>
+  );
 };
 
 export default App;
