@@ -1,7 +1,7 @@
 import React from 'react';
 import {SafeAreaView, TextInput, Button} from 'react-native';
 
-const App = () => {
+const App: React.FC<() => {}> = () => {
   return (
     <SafeAreaView>
       <TextInput placeholder="Titre de la chanson" />
